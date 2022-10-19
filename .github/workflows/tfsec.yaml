@@ -2,6 +2,7 @@ name: tfsec
 on:
   push:
     branches:
+      - main
       - master
       - tfsec
   pull_request:
