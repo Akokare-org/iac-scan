@@ -25,17 +25,11 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v3
 
-      - name: Run tfsec with reviewdog output on the PR
-        uses: reviewdog/action-tfsec@master
+      - name: tfsec
+        uses: aquasecurity/tfsec-action@v1.0.0
         with:
-          github_token: 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
-          #working_directory: my_directory # Change working directory
-          level: info # Get more output from reviewdog
-          reporter: github-pr-review # Change reviewdog reporter
-          filter_mode: nofilter # Check all files, not just the diff
-          fail_on_error: true # Fail action if errors are found
-          flags: -tee # Add debug flag to reviewdog
-          #tfsec_flags: "" # Optional 
+          sarif_file: tfsec.sarif 
+          working-directory: '.'
 
 #      - name: Upload SARIF file
 #        uses: github/codeql-action/upload-sarif@v2
