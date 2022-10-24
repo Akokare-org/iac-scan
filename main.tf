@@ -4,7 +4,7 @@ provider "aws" {
   default_tags {
     tags = {
       "Adobe.Owner"      = "Adobe Stock"
-      "Adobe.CostCenter" = "102482"
+      "Adobe.CostCenter" = "000000"
       "Adobe.PCIData"    = "false"
       "Team"             = "stock"
       "Microservice"     = "stock-web"
