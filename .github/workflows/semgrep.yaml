@@ -3,7 +3,7 @@ name: Semgrep
 
 on:
   push:
-    branches: [ "main", "master", "tfsec" ]
+    branches: [ "main", "master", "tfsec*" ]
   pull_request:
   schedule:
     - cron: '33 23 * * 1'
