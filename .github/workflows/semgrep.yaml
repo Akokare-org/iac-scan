@@ -2,14 +2,11 @@
 name: Semgrep
 
 on:
-  # Scan changed files in PRs (diff-aware scanning):
-  pull_request: ["*"]
-  # Scan mainline branches and report all findings:
   push:
-    branches: ["*"]
-  # Schedule the CI job (this method uses cron syntax):
+    branches: [ "main", "master", "tfsec" ]
+  pull_request:
   schedule:
-    - cron: '30 0 1,15 * *' # Scheduled for 00:30 UTC on both the 1st and 15th of the month
+    - cron: '33 23 * * 1'
 
 jobs:
   semgrep:
