@@ -1,6 +1,6 @@
 provider "aws" {
   region = var.region
-
+  profile = "stock-dev"
   default_tags {
     tags = {
       "Adobe.Owner"      = "Adobe Stock"
