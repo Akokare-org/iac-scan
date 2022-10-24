@@ -8,6 +8,7 @@ provider "aws" {
       "Adobe.PCIData"    = "false"
       "Team"             = "stock"
       "Microservice"     = "stock-web"
+      
     }
   }
 }
