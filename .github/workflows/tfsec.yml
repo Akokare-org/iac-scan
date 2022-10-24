@@ -28,7 +28,7 @@ jobs:
       - name: Run tfsec
         uses: aquasecurity/tfsec-pr-commenter-action@v1.2.0
         with:
-          github_token: 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      
+          github_token: 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      
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v2
